@@ -1,5 +1,5 @@
 FROM node:6.10.0-alpine
 
-RUN apk update && apk upgrade
+RUN apk update && apk upgrade --no-cache
 
-RUN apk add --update bash python make g++ libc6-compat
+RUN apk add --no-cache bash python make g++ libc6-compat
